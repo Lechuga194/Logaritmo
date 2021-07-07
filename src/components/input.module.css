@@ -1,0 +1,36 @@
+.singleInput{
+    display: grid;
+    grid-template-rows: auto auto;
+}
+
+.singleInput p {
+    text-align: center;
+}
+
+input{
+    border-color: rgb(199, 199, 199);
+    border-style: double;
+    border-radius: 50px;
+    height: 20px;
+    width: 100px;
+    font-weight: bold;
+    outline: none;
+}
+
+#inputmod{
+    padding-left: 10px;
+}
+
+.singleInputResult{
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 10px;
+    justify-items: start;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+}
+
+.singleInputResult p{
+    text-align: center;
+}

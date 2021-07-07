@@ -1,0 +1,136 @@
+.home{
+    display: grid;
+    grid-template-rows: 25vh 75vh;
+    height: 100vh;
+    width: 100vw;
+}
+
+.bannerHome{
+    background-color: #00AFFA;
+    color: white;
+}
+
+.bannerHome p{
+    text-align: center;
+}
+
+#title{
+    font-weight: bolder;
+    font-size: 30px;
+    margin: 20px;
+}
+
+#subtitle{
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.text{
+    text-align: center;
+}
+
+.contentHome{
+    display: grid;
+    grid-template-rows: auto auto auto;
+}
+
+.formula{
+    display: grid;
+    grid-template-rows: auto auto auto;
+    justify-items: center;
+    align-items: center;
+    place-content: center;
+}
+
+.formula img{
+    width: 30%;
+}
+
+#inputs{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-items: center;
+    align-items: center;
+    place-content: center;
+    column-gap: 5%;
+}
+
+
+@media (max-width: 500px){
+    #title{
+        font-size: 20px;
+        margin: 10px;
+    }
+    
+    #subtitle{
+        font-weight: bold;
+        font-size: 12px;
+    }
+
+    #textHome{
+        padding-right: 15%;
+        padding-left: 15%;
+    }
+
+    .formula{
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    #inputs{
+        grid-template-columns: auto;
+        grid-template-rows: auto auto auto;
+    }
+}
+
+/************ RESULTADOS *******************/
+
+.resultados{
+    display: grid;
+    grid-template-rows: 15vh 85vh;
+    height: 100vh;
+    width: 100vw;
+}
+
+.bannerResultados{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #00AFFA;
+    color: white;
+    text-align: center;
+}
+
+.contentResultados{
+    display: grid;
+    grid-template-columns: 40% 60%;
+
+}
+
+.leftPanel{
+    display: grid;
+    grid-template-rows: auto auto;
+    place-content: center;
+}
+
+.datacontainer{
+    display: grid;
+    grid-template-rows: 20% 50%;
+    border-radius: 20px;
+    background-color: #00AFFA;
+    color: white;
+    row-gap: 10%;
+}
+
+#description{
+    margin-left: 10%;
+}
+
+.data{
+    display: grid;
+    grid-template-rows: auto auto auto;
+    justify-items: start;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+}
