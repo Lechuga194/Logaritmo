@@ -1,0 +1,16 @@
+.imageContainer{
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(2, auto);
+    row-gap: 15px;
+}
+
+.imageContainer img{
+    width: 50%;
+}
+
+#mix{
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 10px;
+}

@@ -134,3 +134,8 @@
     justify-content: center;
     align-content: center;
 }
+
+.error{
+    color: rgb(177, 19, 19);
+}
+
