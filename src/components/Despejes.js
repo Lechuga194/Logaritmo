@@ -8,9 +8,9 @@ import formula5 from '../static/formula5.png'
 
 let images = [formula1, formula2, formula3, formula4, formula5];
 
-function Despejes() {
+function Despejes({windowWidth}) {
   return (
-    <div className={styles.imageContainer}>
+    <div className={windowWidth <= 900 ? styles.imageContainerMovil : styles.imageContainer}>
         {
             images.map((img, i) => {
                 return <div key={i} id={styles.mix}>{i+1+".-"}<img key={i} src={img} alt="formula"></img></div>

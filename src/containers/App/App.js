@@ -1,9 +1,10 @@
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 import styles from './app.module.css'
 import Button from '../../components/Button'
 import Input from '../../components/Input'
 import Despejes from '../../components/Despejes'
 import formula1 from '../../static/formula1.png'
+import btnback from '../../static/back.png'
 
 const montoValues = [100000,15000,50000,4000];
 const capitalValues = [60000,1000,2000,3000];
@@ -16,6 +17,23 @@ function App() {
   const [interesEntero, setInteresEntero] = useState(10);
   const [error, setError] = useState(false);
 
+  function getWindowWidth() {
+    const {innerWidth: width} = window;
+    return width;
+  }
+  
+  const [windowWidth, setWindowWidth] = useState(getWindowWidth());
+  
+  useEffect(() => {
+    function handleResize() {
+      setWindowWidth(getWindowWidth());
+    }
+
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+  
+
   const redirect = () => setPage('resultados');
   const back = () => setPage('home');
   const traceError = (value) => setError(value);
@@ -25,6 +43,8 @@ function App() {
 
   const interes = interesEntero/100;
   const resultado = Math.log(monto/capital) / Math.log(1 + interes);
+
+  console.log(windowWidth);
 
   return (
     page === 'home' ? 
@@ -48,12 +68,18 @@ function App() {
             <Input text="Capital" signo="$" changeValue={changeCapital} value={capital} traceError={traceError}/>
             <Input text="Tasa de interés" signo="%" changeValue={changeInteres} value={interesEntero} traceError={traceError}/>
           </div>
-          <Button redirect={redirect} text={"Iniciar"}></Button>
+          <Button redirect={redirect} text={"Calcular"}></Button>
         </div>
       </div>
     :
       <div className={styles.resultados}>
-        <div className={styles.bannerResultados}><p id={styles.title}>LOGARITMO</p></div>
+        
+        <div className={styles.bannerResultados}>
+          {
+            windowWidth <= 900 ? <div className={styles.responsivebanner}><img src={btnback} alt="Regresar" onClick={back}></img><p id={styles.title}>LOGARITMO</p></div> : <p id={styles.title}>LOGARITMO</p>
+          }
+        </div>
+        
         <div className={styles.contentResultados}>
           <div className={styles.leftPanel}>
             {
@@ -67,12 +93,14 @@ function App() {
                 <Input text="Interes:&nbsp;&nbsp;&nbsp;&nbsp;" signo="%" changeValue={changeInteres} value={interesEntero} isResult={true} traceError={traceError}/>
               </div>
             </div>
-            <Button redirect={back} text={"Regresar"}></Button>
+            {
+              windowWidth > 900 ? <Button redirect={back} text={"Regresar"}></Button> : void 0
+            }
           </div>
           <div className={styles.rigthPanel}>
             <div className={styles.despejes}>
               <p>Primero despejamos la formula</p>
-              <Despejes />
+              <Despejes windowWidth={windowWidth}/>
             </div>
             <div className={styles.sustitucion}>
               <p>Reemplazamos los datos en la formula</p>

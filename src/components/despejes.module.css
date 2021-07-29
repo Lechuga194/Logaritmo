@@ -6,7 +6,12 @@
 }
 
 .imageContainer img{
-    width: 50%;
+    width: 80%;
+}
+
+.imageContainerMovil img{
+    min-width: 40%;
+    max-width: 50%;
 }
 
 #mix{
