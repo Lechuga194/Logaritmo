@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/Logaritmo/static/css/main.62ae47f6.chunk.css",
-    "main.js": "/Logaritmo/static/js/main.a2099a5d.chunk.js",
-    "main.js.map": "/Logaritmo/static/js/main.a2099a5d.chunk.js.map",
+    "main.css": "/Logaritmo/static/css/main.3e01a3c8.chunk.css",
+    "main.js": "/Logaritmo/static/js/main.dab6e694.chunk.js",
+    "main.js.map": "/Logaritmo/static/js/main.dab6e694.chunk.js.map",
     "runtime-main.js": "/Logaritmo/static/js/runtime-main.289175cf.js",
     "runtime-main.js.map": "/Logaritmo/static/js/runtime-main.289175cf.js.map",
-    "static/js/2.8e740673.chunk.js": "/Logaritmo/static/js/2.8e740673.chunk.js",
-    "static/js/2.8e740673.chunk.js.map": "/Logaritmo/static/js/2.8e740673.chunk.js.map",
+    "static/js/2.722ed422.chunk.js": "/Logaritmo/static/js/2.722ed422.chunk.js",
+    "static/js/2.722ed422.chunk.js.map": "/Logaritmo/static/js/2.722ed422.chunk.js.map",
     "index.html": "/Logaritmo/index.html",
-    "static/css/main.62ae47f6.chunk.css.map": "/Logaritmo/static/css/main.62ae47f6.chunk.css.map",
-    "static/js/2.8e740673.chunk.js.LICENSE.txt": "/Logaritmo/static/js/2.8e740673.chunk.js.LICENSE.txt",
+    "static/css/main.3e01a3c8.chunk.css.map": "/Logaritmo/static/css/main.3e01a3c8.chunk.css.map",
+    "static/js/2.722ed422.chunk.js.LICENSE.txt": "/Logaritmo/static/js/2.722ed422.chunk.js.LICENSE.txt",
     "static/media/formula1.ba6a496b.png": "/Logaritmo/static/media/formula1.ba6a496b.png",
     "static/media/formula2.0ea384e6.png": "/Logaritmo/static/media/formula2.0ea384e6.png",
     "static/media/formula3.dc5cf6ee.png": "/Logaritmo/static/media/formula3.dc5cf6ee.png",
@@ -18,8 +18,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.289175cf.js",
-    "static/js/2.8e740673.chunk.js",
-    "static/css/main.62ae47f6.chunk.css",
-    "static/js/main.a2099a5d.chunk.js"
+    "static/js/2.722ed422.chunk.js",
+    "static/css/main.3e01a3c8.chunk.css",
+    "static/js/main.dab6e694.chunk.js"
   ]
 }

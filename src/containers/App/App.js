@@ -58,7 +58,7 @@ function App() {
           <div className={styles.formula}>
             <p className={styles.text}>Recordemos la fórmula del interés compuesto</p>
             <img src={formula1} alt="M=C(1+i)^n"></img>
-            <p className={styles.text}>Introduce los datos deseados para encontrar el numero de años </p>
+            <p className={styles.text}>Introduce los datos deseados para encontrar el número de años </p>
             {
               error ? <p className={styles.error}>Solo debes introducir numeros mayores que 0!</p> : void 0
             }
@@ -99,11 +99,11 @@ function App() {
           </div>
           <div className={styles.rigthPanel}>
             <div className={styles.despejes}>
-              <p>Primero despejamos la formula</p>
+              <p>Primero despejamos la fórmula</p>
               <Despejes windowWidth={windowWidth}/>
             </div>
             <div className={styles.sustitucion}>
-              <p>Reemplazamos los datos en la formula</p>
+              <p>Reemplazamos los datos en la fórmula</p>
               <p>1.- {monto} = {capital}(1 + {interes})^n</p>
               <p>2.- {monto}/{capital} = (1 + {interes})^n</p>
               <p>3.- log({monto}/{capital}) = log(1 + {interes})^n</p>
