@@ -1,20 +1,20 @@
-.imageContainer{
+.imageContainer {
     display: grid;
     grid-template-columns: repeat(3, auto);
     grid-template-rows: repeat(2, auto);
     row-gap: 15px;
 }
 
-.imageContainer img{
+.imageContainer img {
     width: 80%;
 }
 
-.imageContainerMovil img{
+.imageContainerMovil img {
     min-width: 40%;
     max-width: 50%;
 }
 
-#mix{
+#mix {
     display: grid;
     grid-template-columns: auto auto;
     column-gap: 10px;

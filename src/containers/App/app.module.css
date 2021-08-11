@@ -1,40 +1,41 @@
-.home{
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap");
+.home {
     display: grid;
     grid-template-rows: 25vh 75vh;
     height: 100vh;
     width: 100vw;
 }
 
-.bannerHome{
-    background-color: #00AFFA;
+.bannerHome {
+    background-color: #00affa;
     color: white;
 }
 
-.bannerHome p{
+.bannerHome p {
     text-align: center;
 }
 
-#title{
+#title {
     font-weight: bolder;
     font-size: 30px;
     margin: 20px;
 }
 
-#subtitle{
+#subtitle {
     font-weight: bold;
     font-size: 16px;
 }
 
-.text{
+.text {
     text-align: center;
 }
 
-.contentHome{
+.contentHome {
     display: grid;
     grid-template-rows: auto auto auto;
 }
 
-.formula{
+.formula {
     display: grid;
     grid-template-rows: auto auto auto;
     justify-items: center;
@@ -42,11 +43,11 @@
     place-content: center;
 }
 
-.formula img{
+.formula img {
     width: 30%;
 }
 
-#inputs{
+#inputs {
     display: grid;
     grid-template-columns: auto auto auto;
     justify-items: center;
@@ -55,29 +56,33 @@
     column-gap: 5%;
 }
 
+.sustitucion span {
+    font-family: "Roboto Mono", monospace;
+    padding-left: 5px;
+}
 
-@media (max-width: 500px){
-    #title{
+@media (max-width: 500px) {
+    #title {
         font-size: 20px;
         margin: 10px;
     }
-    
-    #subtitle{
+
+    #subtitle {
         font-weight: bold;
         font-size: 12px;
     }
 
-    #textHome{
+    #textHome {
         padding-right: 15%;
         padding-left: 15%;
     }
 
-    .formula{
+    .formula {
         padding-left: 5%;
         padding-right: 5%;
     }
 
-    #inputs{
+    #inputs {
         grid-template-columns: auto;
         grid-template-rows: auto auto auto;
     }
@@ -85,48 +90,47 @@
 
 /************ RESULTADOS *******************/
 
-.resultados{
+.resultados {
     display: grid;
     grid-template-rows: 15vh 85vh;
     height: 100vh;
     width: 100vw;
 }
 
-.bannerResultados{
+.bannerResultados {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #00AFFA;
+    background-color: #00affa;
     color: white;
     text-align: center;
 }
 
-.contentResultados{
+.contentResultados {
     display: grid;
     grid-template-columns: 40% 60%;
-
 }
 
-.leftPanel{
+.leftPanel {
     display: grid;
     grid-template-rows: auto auto;
     place-content: center;
 }
 
-.datacontainer{
+.datacontainer {
     display: grid;
     grid-template-rows: 20% 50%;
     border-radius: 20px;
-    background-color: #00AFFA;
+    background-color: #00affa;
     color: white;
     row-gap: 10%;
 }
 
-#description{
+#description {
     margin-left: 10%;
 }
 
-.data{
+.data {
     display: grid;
     grid-template-rows: auto auto auto;
     justify-items: start;
@@ -135,28 +139,33 @@
     align-content: center;
 }
 
-.error{
-    color: rgb(177, 19, 19);
+.error {
+    color: rgb(255, 0, 0);
+    font-weight: bold;
 }
 
+.resultado span {
+    font-family: "Roboto Mono", monospace;
+    padding-left: 5px;
+}
 
-@media (max-width: 900px){
-    .resultados{
+@media (max-width: 900px) {
+    .resultados {
         display: grid;
         grid-template-rows: 10vh 90vh;
         height: 100vh;
         width: 100vw;
     }
-    
-    .bannerResultados{
+
+    .bannerResultados {
         display: grid;
         grid-template-columns: auto auto auto;
         align-items: center;
         justify-items: start;
         justify-content: start;
     }
-    
-    .responsivebanner{
+
+    .responsivebanner {
         display: grid;
         grid-template-columns: 10vw 80vw 10vw;
         align-items: center;
@@ -168,7 +177,7 @@
         margin-left: 50px;
     }
 
-    .responsivebanner img{
+    .responsivebanner img {
         width: 50px;
         justify-self: center;
         margin-left: 30px;
@@ -176,33 +185,32 @@
     }
 
     /* Tiene left y right panel */
-    .contentResultados{
+    .contentResultados {
         display: grid;
         grid-template-columns: auto;
         grid-template-rows: auto auto;
     }
-    
-    .leftPanel{
+
+    .leftPanel {
         display: grid;
         grid-template-rows: auto;
         place-content: center;
         margin-top: 25px;
     }
-    
-    .datacontainer{
+
+    .datacontainer {
         display: grid;
         grid-template-rows: 20% 50%;
         border-radius: 20px;
-        background-color: #00AFFA;
+        background-color: #00affa;
         color: white;
         row-gap: 10%;
         padding-left: 50px;
         padding-right: 50px;
     }
-    
-    .rigthPanel{
+
+    .rigthPanel {
         margin-left: 25px;
         margin-right: 25px;
     }
-
 }
