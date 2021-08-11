@@ -60,7 +60,7 @@ function App() {
             <img src={formula1} alt="M=C(1+i)^n"></img>
             <p className={styles.text}>Introduce los datos deseados para encontrar el número de años </p>
             {
-              error ? <p className={styles.error}>Solo debes introducir numeros mayores que 0!</p> : void 0
+              error ? <p className={styles.error}>Solo debes introducir números mayores que 0!</p> : void 0
             }
           </div>
           <div id={styles.inputs}>
@@ -83,7 +83,7 @@ function App() {
         <div className={styles.contentResultados}>
           <div className={styles.leftPanel}>
             {
-              error ? <p className={styles.error}>Solo debes introducir numeros mayores que 0!</p> : void 0
+              error ? <p className={styles.error}>Solo debes introducir números mayores que 0!</p> : void 0
             }
             <div className={styles.datacontainer}>
               <p id={styles.description}>Datos introducidos</p>
