@@ -90,7 +90,7 @@ function App() {
               <div className={styles.data}>
                 <Input text="Monto&nbsp;&nbsp;:" signo="$" changeValue={changeMonto} value={monto} isResult={true} traceError={traceError}/>
                 <Input text="Capital:&nbsp;" signo="$" changeValue={changeCapital} value={capital} isResult={true} traceError={traceError}/>
-                <Input text="Interes:&nbsp;&nbsp;&nbsp;&nbsp;" signo="%" changeValue={changeInteres} value={interesEntero} isResult={true} traceError={traceError}/>
+                <Input text="Interés:&nbsp;&nbsp;&nbsp;&nbsp;" signo="%" changeValue={changeInteres} value={interesEntero} isResult={true} traceError={traceError}/>
               </div>
             </div>
             {
