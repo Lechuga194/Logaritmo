@@ -1,25 +1,26 @@
 {
   "files": {
-    "main.css": "/Logaritmo/static/css/main.3e01a3c8.chunk.css",
-    "main.js": "/Logaritmo/static/js/main.9d40aff6.chunk.js",
-    "main.js.map": "/Logaritmo/static/js/main.9d40aff6.chunk.js.map",
+    "main.css": "/Logaritmo/static/css/main.874a6b9a.chunk.css",
+    "main.js": "/Logaritmo/static/js/main.5a440709.chunk.js",
+    "main.js.map": "/Logaritmo/static/js/main.5a440709.chunk.js.map",
     "runtime-main.js": "/Logaritmo/static/js/runtime-main.289175cf.js",
     "runtime-main.js.map": "/Logaritmo/static/js/runtime-main.289175cf.js.map",
     "static/js/2.722ed422.chunk.js": "/Logaritmo/static/js/2.722ed422.chunk.js",
     "static/js/2.722ed422.chunk.js.map": "/Logaritmo/static/js/2.722ed422.chunk.js.map",
     "index.html": "/Logaritmo/index.html",
-    "static/css/main.3e01a3c8.chunk.css.map": "/Logaritmo/static/css/main.3e01a3c8.chunk.css.map",
+    "static/css/main.874a6b9a.chunk.css.map": "/Logaritmo/static/css/main.874a6b9a.chunk.css.map",
     "static/js/2.722ed422.chunk.js.LICENSE.txt": "/Logaritmo/static/js/2.722ed422.chunk.js.LICENSE.txt",
+    "static/media/formula1.30e5d4b3.png": "/Logaritmo/static/media/formula1.30e5d4b3.png",
     "static/media/formula1.ba6a496b.png": "/Logaritmo/static/media/formula1.ba6a496b.png",
-    "static/media/formula2.0ea384e6.png": "/Logaritmo/static/media/formula2.0ea384e6.png",
-    "static/media/formula3.dc5cf6ee.png": "/Logaritmo/static/media/formula3.dc5cf6ee.png",
-    "static/media/formula4.154de60f.png": "/Logaritmo/static/media/formula4.154de60f.png",
-    "static/media/formula5.57c7164e.png": "/Logaritmo/static/media/formula5.57c7164e.png"
+    "static/media/formula2.eb0759dd.png": "/Logaritmo/static/media/formula2.eb0759dd.png",
+    "static/media/formula3.56fc7192.png": "/Logaritmo/static/media/formula3.56fc7192.png",
+    "static/media/formula4.578e9f93.png": "/Logaritmo/static/media/formula4.578e9f93.png",
+    "static/media/formula5.69b42acf.png": "/Logaritmo/static/media/formula5.69b42acf.png"
   },
   "entrypoints": [
     "static/js/runtime-main.289175cf.js",
     "static/js/2.722ed422.chunk.js",
-    "static/css/main.3e01a3c8.chunk.css",
-    "static/js/main.9d40aff6.chunk.js"
+    "static/css/main.874a6b9a.chunk.css",
+    "static/js/main.5a440709.chunk.js"
   ]
 }
